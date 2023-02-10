@@ -1,0 +1,240 @@
+@charset "utf-8";
+html {
+  scroll-behavior: smooth;
+  background: black;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+* {
+  font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+  text-decoration: none;
+}
+:not(ol,li,dl,dt,dd,ul) {
+  margin: 0;
+  padding: 0;
+}
+.background {
+  position: absolute;
+  z-index: -1;
+}
+.wrapper {
+  width: 100vw;
+  min-width: 950px;
+  height: 100vh;
+  min-height: 1000px;
+  text-align: center;
+  margin: auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+header {
+  margin: 1em;
+}
+header svg {
+  max-height: 100px;
+  fill: yellow;
+}
+.links, .radio-stations {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-evenly;
+  text-align: center;
+}
+.links {
+  margin: 2em;
+}
+.links img {
+  max-width: 50px;
+  max-height: 50px;
+}
+.links svg {
+  width: 50px;
+  height: 50px;
+  fill: white; 
+  stroke: white;
+  stroke-width: 1;
+}
+.links svg:hover {
+  fill: lime;
+}
+.dropdown {
+  position: relative;
+  width: max-content;
+}
+ul {
+  list-style-type: none;
+}
+li {
+  float: left;
+}
+li a {
+  display: block;
+  text-align: center;
+  padding: 14px 12px;
+  text-decoration: none;
+  color: black;
+}
+li a:hover:not(.active) {
+  background-color: darkgreen;
+  color: white;
+}
+li.dropdown {
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  width: inherit;
+  max-width: inherit;
+  max-height: 285px;
+  overflow-y: scroll;
+  overscroll-behavior: contain;
+  color: white;
+  background: black;
+  border-style: ridge;
+  border-color: green;
+  z-index: 1;
+}
+.right-dropdown-content {
+  right: 0;
+}
+.dropdown-content::-webkit-scrollbar {
+  width: 15px;
+  display: initial;
+}
+.dropdown-content::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb {
+  background: lime; 
+  border-radius: 10px;
+}
+.dropdown-content::-webkit-scrollbar-thumb:hover {
+  background: green; 
+}
+.dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.favicon_img {
+  width: 16px;
+  height: 16px;
+}
+.link-header {
+  text-align: left;
+  color: lime;
+  margin-left: 1em;
+}
+.emuparadise_script_p, #emuparadise_script_a {
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+#emuparadise_script_a {
+  display: inline;
+  font-weight: bold;
+  text-decoration: underline;
+}
+hr {
+  margin: 0 1em;
+  color: green;
+}
+.rss-feed {
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+  max-height: auto; 
+  margin: auto;
+}
+.rss-feed-header {
+  text-align: left;
+}
+.rss-feed-header img {
+  width: auto;
+  height: 20px;
+}
+.rss-feed-iframe {
+  width: 100%;
+  height: 50vh;
+  border-style: groove;
+  border-color: green;
+}
+.rss-feed-footer {
+  width: fit-content;
+  text-align: left;
+  margin-bottom: 2em;
+}
+.rss-feed-footer-img {
+  display:flex;
+  justify-items:center;
+}
+.rss-feed-footer img {
+  width: auto;
+  height: 16px;
+  margin-right: .5em;
+}
+.rss-feed-footer a {
+  color: gray;
+  text-decoration: none;
+  display:flex;
+  justify-items:center;
+}
+.rss-feed-footer a:hover {
+  color: lime;
+}
+.radio-stations {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  width: 100%;
+  height: 120px;
+}
+.radio-stations iframe{
+  flex: 0 0 auto;
+  width: 370px;
+  height: 120px;
+}
+.notice {
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+}
+.notice p {
+  color: white;
+  user-select: none;
+}
+.notice a {
+  color: white;
+}
+.notice a:hover {
+  color: lime;
+}
+.disclaimer {
+  font-size: xx-small;
+  text-align: center;
+  color: white;
+  margin: 2em 0;
+  user-select: none;
+}
+footer p {
+  text-align: left;
+  color: white;
+  margin-left: .5em;
+  user-select: none;
+}
+footer span{
+  color: gold;
+  font-size: larger;
+  transform: rotate(45deg);
+  display: inline-block;
+}
