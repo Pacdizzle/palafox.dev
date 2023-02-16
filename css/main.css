@@ -37,27 +37,27 @@ header svg {
   max-height: 100px;
   fill: yellow;
 }
-.links, .radio-stations {
+nav, .radio-stations {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   text-align: center;
 }
-.links {
+nav {
   margin: 2em;
 }
-.links img {
+nav img {
   max-width: 50px;
   max-height: 50px;
 }
-.links svg {
+nav svg {
   width: 50px;
   height: 50px;
   fill: white; 
   stroke: white;
   stroke-width: 1;
 }
-.links svg:hover {
+nav svg:hover {
   fill: lime;
 }
 .dropdown {
