@@ -135,12 +135,12 @@ li.dropdown {
   color: lime;
   margin-left: 1em;
 }
-.emuparadise_script_p, #emuparadise_script_a {
+.links_p, #links_a {
   margin: 0;
   padding: 0;
   text-align: left;
 }
-#emuparadise_script_a {
+#links_a {
   display: inline;
   font-weight: bold;
   text-decoration: underline;
