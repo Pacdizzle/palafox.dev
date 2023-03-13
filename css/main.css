@@ -22,7 +22,6 @@ html {
 }
 .wrapper {
   width: 100vw;
-  min-width: 950px;
   height: 100vh;
   min-height: 1000px;
   text-align: center;
@@ -37,58 +36,49 @@ header svg {
   max-height: 100px;
   fill: yellow;
 }
-nav, .radio-stations {
+.navbar, .radio-stations {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   text-align: center;
 }
-nav {
+.navbar {
   margin: 2em;
 }
-nav img {
+.navbar img {
   max-width: 50px;
   max-height: 50px;
 }
-nav svg {
+.navbar svg {
   width: 50px;
   height: 50px;
   fill: white; 
   stroke: white;
   stroke-width: 1;
 }
-nav svg:hover {
+.navbar svg:hover {
   fill: lime;
 }
-.dropdown {
+.navbar a {
   position: relative;
-  width: max-content;
 }
-ul {
-  list-style-type: none;
-}
-li {
+.dropdown {
   float: left;
 }
-li a {
+.dropdown-content a {
   display: block;
   text-align: center;
   padding: 14px 12px;
   text-decoration: none;
   color: black;
 }
-li a:hover:not(.active) {
+.dropdown-content a:hover {
   background-color: darkgreen;
   color: white;
-}
-li.dropdown {
-  display: inline-block;
 }
 .dropdown-content {
   display: none;
   position: absolute;
-  width: inherit;
-  max-width: inherit;
   max-height: 285px;
   overflow-y: scroll;
   overscroll-behavior: contain;
@@ -98,8 +88,11 @@ li.dropdown {
   border-color: green;
   z-index: 1;
 }
-.right-dropdown-content {
-  right: 0;
+@media only screen and (max-width: 1000px) {
+  .dropdown-content {
+    min-width: 100%;
+    left: 0;
+  }
 }
 .dropdown-content::-webkit-scrollbar {
   width: 15px;
