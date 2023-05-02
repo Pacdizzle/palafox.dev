@@ -200,21 +200,6 @@ hr {
   display: flex;
   flex-direction: column
 }
-.notice {
-  display: flex;
-  justify-content: center;
-  margin: 2em 0;
-}
-.notice p {
-  color: white;
-  user-select: none;
-}
-.notice a {
-  color: white;
-}
-.notice a:hover {
-  color: lime;
-}
 .disclaimer {
   font-size: xx-small;
   text-align: center;
