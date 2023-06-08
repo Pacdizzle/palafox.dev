@@ -205,6 +205,7 @@ hr {
   text-align: center;
   color: white;
   margin: 2em 0;
+  padding-bottom: 20em;
   user-select: none;
 }
 footer p {
