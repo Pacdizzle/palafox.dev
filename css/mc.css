@@ -1,5 +1,5 @@
 @charset "utf-8";
-html {
+html{
     background: url(/img/mc/minecraft_wallpaper.jpg) center center fixed;
     background-color: black;
     -webkit-background-size: cover;
@@ -62,7 +62,7 @@ img{
     width: auto;
     height: 50px;
 }
-.armor, .weapons, .tools {
+.armor, .weapons, .tools, .links {
     background-color: rgba(0,0,0,0.7);
     border-radius: 8px;
     margin: 10px;
@@ -74,9 +74,27 @@ img{
     padding: .5em; margin:0 1em;
     user-select: none;
 }
-.list {
+.list{
 background-color: rgba(0,65,0,0.5);
 border-radius: 0 0 10px 10px;
 padding: .5em;
 margin:.3em 1em 2em 1em;
+}
+.links{
+    text-align: center;
+}
+.links p{
+    padding: .5em;
+}
+.tittle a:link, .links a:link{
+    text-decoration: none;
+}
+.tittle a:visited, .links a:visited{
+    text-decoration: none;
+}
+.tittle a:hover, .links a:hover{
+    text-decoration: underline;
+}
+.tittle a:active, .links a:active{
+    text-decoration: underline;
 }
