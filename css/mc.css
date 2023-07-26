@@ -1,56 +1,79 @@
 @charset "utf-8";
 html {
     scroll-behavior: smooth;
-}
+    background: black;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  ::-webkit-scrollbar {
+    display: none;
+  }
 *{
     font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
-    text-decoration: none;
     /* user-select: none; */
     color: white;
 }
-html { 
-    
+html {
+    width: 100vw;
+    height: 100vh;
+    background: url(/img/mc/minecraft_wallpaper.jpg) center center fixed;
+    /* background: url(/img/mc/minecraft_wallpaper_mobile.jpg) center center fixed; */
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 :not(ol,li,dl,dt,dd,ul){
     margin: 0;
     padding: 0;
 }
 .bodyContainerMC{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
     min-height: 100vh;
-    flex:1;
-    background: url(/img/mc/minecraft_wallpaper.jpg) center center fixed; 
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+    min-width: 1050px;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 .tittle{
     text-align: center;
-    width: 100%;
+    margin: 20px 10px 10px 10px;
+    background-color:rgba(0,0,0,0.7);
+    border-radius: 8px;
+    padding: 10px;
+}
+h1, p{
+    user-select: none;
 }
 .flexContainer{
     display: flex;
-    justify-content: space-evenly;
-    align-items: stretch;
-    align-content: center;
     width: 100%;
 }
-.flexItems{
-    padding-top: 3em;
-    display: flex;
+.flexContainer > * {
+    width: calc(100% / 3);
 }
-.flexItems > .flexItems{
-    flex-direction:column;
-    flex:1;
-}
-.enchantmentsList{
-    flex:1;
+h2{
+    padding: 3em 0;
+    text-align: center;
+    user-select: none;
 }
 img{
+    width: auto;
     height: 50px;
 }
+.armor, .weapons, .tools {
+    background-color:rgba(0,0,0,0.7);
+    border-radius: 8px;
+    margin: 10px;
+}
 
+.header{
+    text-align: center;
+    background-color:rgba(0,127,0,0.5);
+    border-radius: 10px 10px 0 0;
+    padding: .5em; margin:0 1em;
+}
+.list {
+background-color:rgba(0,65,0,0.5);
+border-radius: 0 0 10px 10px;
+padding: .5em;
+margin:0 1em 5em 1em;
+}
