@@ -130,6 +130,12 @@ header svg {
   padding: .5em 1em;
   user-select: none;
 }
+.link-header a{
+  text-align: left;
+  color: lime;
+  padding: .5em 1em;
+  text-decoration: underline;
+}
 .links_p, #links_a {
   margin: 0;
   padding: 6px 0px;
