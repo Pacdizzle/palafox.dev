@@ -23,7 +23,6 @@ html {
 .wrapper {
   width: 100vw;
   height: 100vh;
-  min-height: 1000px;
   text-align: center;
   margin: auto;
   overflow-x: hidden;
@@ -198,20 +197,11 @@ hr {
 .rss-feed-footer a:hover {
   color: lime;
 }
-.radio-stations img{
-  width: 50px;
-  height: 50px;
-}
-#radio-stations {
-  display: flex;
-  flex-direction: column
-}
 .disclaimer {
   font-size: xx-small;
   text-align: center;
   color: white;
-  margin: 2em 0;
-  padding-bottom: 20em;
+  margin: 2em 0 15em 0;
   user-select: none;
 }
 footer p {
@@ -226,57 +216,3 @@ footer span{
   transform: rotate(45deg);
   display: inline-block;
 }
-/* ----- The modal code ----- */
-.modal{ /* Modal Background */
-	position: fixed;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	background: rgba(0,0,0,0.8);
-	z-index: 99999;
-	opacity: 0;
-	pointer-events: none;
-}
-.modal:target{ /* Modal Body */
-	opacity: 1;
-	pointer-events: auto;
-	overflow: auto;
-	max-height: calc(100%);
-}
-.close{ /* Close Button */
-  display: block;
-  position: fixed;
-  height: 45px;
-  width: 45px;
-  top: 1%;
-  right: 5%;
-  text-decoration: none;
-  line-height: 45px;
-  font-family: Arial, sans-serif;
-  font-size: 26px;
-  font-weight: bold; 
-  background:#ff0000;
-  color:#fff;
-  text-decoration:none;
-  font-weight:bold;
-  -webkit-border-radius:32px;
-  -moz-border-radius:32px;
-  border-radius:32px;
-  z-index:9999;  
-}				
-.close:hover{ 
-  background: #000; 
-}
-.modal > #modaliframe{
-  margin: 5% auto 0 auto;
-}
-.modaliframe{
-  padding-top: 10vh;
-}
-#modaliframe{
-  width: 360px;
-  height: 120px;
-  border:none;
-}
-/* ----- End of the modal code ----- */
