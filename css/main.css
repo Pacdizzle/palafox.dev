@@ -25,28 +25,22 @@ html {
   height: 100vh;
   text-align: center;
   margin: auto;
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 header {
-  margin: 1em;
+  text-align: center;
 }
 header svg {
+  width: auto;
   max-height: 100px;
   fill: yellow;
+  margin: 2em;
 }
-.navbar, .radio-stations {
+.navbar {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   text-align: center;
-}
-.navbar {
   margin: 2em;
-}
-.navbar img {
-  max-width: 50px;
-  max-height: 50px;
 }
 .navbar svg {
   width: 50px;
@@ -58,22 +52,8 @@ header svg {
 .navbar svg:hover {
   fill: lime;
 }
-.navbar a {
-  position: relative;
-}
 .dropdown {
   float: left;
-}
-.dropdown-content a {
-  display: block;
-  text-align: center;
-  padding: 14px 12px;
-  text-decoration: none;
-  color: black;
-}
-.dropdown-content a:hover {
-  background-color: darkgreen;
-  color: white;
 }
 .dropdown-content {
   display: none;
@@ -87,12 +67,6 @@ header svg {
   border-color: green;
   z-index: 1;
   user-select: none;
-}
-@media only screen and (max-width: 1000px) {
-  .dropdown-content {
-    min-width: 100%;
-    left: 0;
-  }
 }
 .dropdown-content::-webkit-scrollbar {
   width: 15px;
@@ -109,15 +83,22 @@ header svg {
 .dropdown-content::-webkit-scrollbar-thumb:hover {
   background: green; 
 }
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 .dropdown-content a {
   color: white;
   padding: 12px 16px;
-  text-decoration: none;
   display: block;
   text-align: left;
 }
-.dropdown:hover .dropdown-content {
-  display: block;
+.dropdown-content a:hover {
+  background-color: darkgreen;
+  color: white;
+}
+.dropdown-content img {
+  max-width: 50px;
+  max-height: 50px;
 }
 .favicon_img {
   width: 16px;
@@ -155,7 +136,7 @@ hr {
   color: green;
 }
 .rss-feed {
-  width: 100%;
+  width: 90vw;
   max-width: 1200px;
   height: auto;
   max-height: auto; 
@@ -215,4 +196,10 @@ footer span{
   font-size: larger;
   transform: rotate(45deg);
   display: inline-block;
+}
+@media only screen and (max-width: 1000px) {
+  .dropdown-content {
+    min-width: 99vw;
+    left: 0;
+  }
 }
