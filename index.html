@@ -12,11 +12,11 @@
 	<link rel="manifest" href="/site.webmanifest">
 	<link href="css/main.css" rel="stylesheet" type="text/css">
 	<script async type="application/javascript" src="js/script.js"></script>
-	<script async type="application/javascript" src="js/matrix_background.js"></script>
+	<script async type="application/javascript" src="js/matrix.min.js"></script>
 </head>
-<body>
-	<canvas class="background" id="background"></canvas>
-	<div class="wrapper">
+<body id="body" onresize="canvasApp()">
+<div class="background" id="canvasContainer"></div>
+<div class="wrapper">
 	<header>
 		<svg viewBox="0 0 3742 494">
 			<path d="M 0.00,0.04
