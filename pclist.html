@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Weboasis inspired personal startpage.">
+	<meta name="author" content="Pacdizzle">
+	<title>PALAFOX</title>
+	<style>
+		* {
+			font-family: Gotham, "Helvetica Neue", Helvetica, Arial, "sans-serif";
+			color: #fff;
+			text-decoration: none;
+			}
+		body, html {
+  			width: 100%;
+  			height: 100%;
+  			margin: 0;
+  			padding: 0;
+			}
+		.wrapper {
+  			background-image: url("/pc_img/bg.jpg");
+  			width: 100vw;
+  			height: 100vh;
+ 			background-position: center;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+ 			margin: auto;
+  			overflow: auto;
+			}
+		.flex-container {
+    		display: flex;
+   			flex-direction: column;
+		    flex-wrap: wrap;
+ 			justify-content: center;
+ 			align-content: stretch;
+ 			align-items: center;
+			overflow: hidden;
+			width: 100%;
+ 			}
+		.flex-item {
+    		order: 0;
+ 			flex: 1;
+  			align-self: auto;
+  			}
+		h1 {
+			font-size: 5vw;
+		}
+		.header {
+ 			text-align: center;
+  			margin: 10vh 0;
+		}
+		.header img {
+  			max-width: 90vw;
+			height: auto;
+		}
+		.component {
+			width: fit-content;
+			height: 100%;
+			text-align: center;
+			border: solid 10px white;
+			border-style: groove;
+			background: rgba(0, 0, 0, .7);
+		}
+		h1:hover:not(:last-child) {
+			text-decoration: underline;
+		}
+		h1, .iframe-container {
+			padding: .5em;
+		}
+		.component img {
+			width: 40vw;
+			height: auto;
+		}
+		.component, .component img, h1 {
+			margin: 5vh 0;
+		}
+		.iframe-container {
+			width: 60vw;
+			margin: auto;
+		}
+		.iframe {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+			padding-top: 56.25%;
+		}
+		iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			border: none;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="flex-container">
+			<div class="flex-item header"><img src="pc_img/header.png" alt="header"></div>
+			<div class="flex-item component">
+				<h1><a href="https://www.amd.com/en/products/cpu/amd-ryzen-5-7600x">AMD Ryzen™ 5 7600X</a></h1>
+				<h1><a href="https://www.amazon.com.mx/dp/B0BBJDS62N">$4,400 MXN</a></h1>
+				<img src="pc_img/cpu.png" alt="Header Image">
+				<div class=iframe-container>
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/_WubXd2tXOA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item component">
+				<h1><a href="https://www.sapphiretech.com/en/consumer/pulse-radeon-rx-6700-xt-12g-gddr6">Sapphire PULSE<br>AMD Radeon RX 6700 XT</a></h1>
+				<h1><a href="https://www.amazon.com.mx/dp/B08YNQ4ZM1/">$7,000 MXN</a></h1>
+				<img src="pc_img/gpu.png" alt="GPU Image">
+				<div class=iframe-container>
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/eIY8gvJJAAs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item component">
+				<h1><a href="https://www.gskill.com/product/165/393/1662622235/F5-6000J3636F16GX2-TZ5N">G.SKILL Trident Z5 Neo<br>DDR5-6000 32GB</a></h1>
+				<h1><a href="https://www.amazon.com.mx/dp/B0BFC8JTDQ/">$2,600 MXN</a></h1>
+				<img src="pc_img/ram.png" alt="RAM Image">
+				<div class=iframe-container>
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/AFx6bMLuS_M" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item component">
+				<h1><a href="https://www.asrock.com/mb/AMD/B650M-HDVM.2/index.asp">ASRock B650M-HDV/M.2</a></h1>
+				<h1><a href="https://www.amazon.com.mx/dp/B0BY6YRT41/">$3,100 MXN</a></h1>
+				<img src="pc_img/mobo.png" alt="Mother Board Image">
+				<div class=iframe-container>
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/ekeTA1rds1s" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item component">
+				<h1><a href="https://www.coolermaster.com/catalog/power-supplies/mwe-series/mwe-gold-850-v2-full-modular/"></a>Cooler Master<br>MWE Gold 850 V2</h1>
+				<h1><a href="https://www.amazon.com.mx/dp/B08M9M6DB9">$2,100 MXN</a></h1>
+				<img src="pc_img/psu.png" alt="Power Supply Image">
+				<div class=iframe-container>
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/YS73fJf62V4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item component">
+				<h1><a href="https://lian-li.com/product/lancool-216/">Lian Li Lancool 216</a></h1>
+				<h1><a href="https://www.amazon.com.mx/dp/B0BN3SY5XW">$2,600 MXN</a></h1>
+				<img src="pc_img/case.png" alt="case Image">
+				<div class=iframe-container>
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/6_w0NbB84P0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item component">
+				<h1><a href="https://www.bequiet.com/en/cpucooler/4466">be quiet! Dark Rock Pro 5</a></h1>
+				<h1><a href="https://www.amazon.com.mx/dp/B0CJY3DYQ3">$2,400 MXN</a></h1>
+				<img src="pc_img/cooler.png" alt="cooler Image">
+				<div class=iframe-container>
+					<div class="iframe">
+						<iframe src="https://www.youtube.com/embed/ltNDbgDDLPs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+					</div>
+				</div>
+			</div>
+			<div class="flex-item component">
+				<h1>Total: $24,200 MXN<br>~ $1,383 USD</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
