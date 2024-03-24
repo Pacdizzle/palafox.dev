@@ -13,9 +13,64 @@ lidarr.addEventListener("contextmenu", (e) => {e.preventDefault(window.open("htt
 const readarr = document.getElementById("readarr");
 readarr.addEventListener("contextmenu", (e) => {e.preventDefault(window.open("http://localhost:8787/","_self"))});
 
-var a = document.getElementById("5");
+var l1 = document.getElementById("1");
+var l2 = document.getElementById("2");
+var l3 = document.getElementById("3");
+var l4 = document.getElementById("4");
+var l5 = document.getElementById("5");
 
-
-function myFunction() {
-      a.style.display = "block";
+function l01() {
+    if (l1.style.display === "none") {
+      l1.style.display = "block";
+      l2.style.display = "none";
+      l3.style.display = "none";
+      l4.style.display = "none";
+      l5.style.display = "none";
+    } else {
+      l1.style.display = "none";
+    }
   }
+  function l02() {
+    if (l2.style.display === "none") {
+        l1.style.display = "none";
+        l2.style.display = "block";
+        l3.style.display = "none";
+        l4.style.display = "none";
+        l5.style.display = "none";
+    } else {
+      l2.style.display = "none";
+    }
+  } 
+  function l03() {
+    if (l3.style.display === "none") {
+        l1.style.display = "none";
+        l2.style.display = "none";
+        l3.style.display = "block";
+        l4.style.display = "none";
+        l5.style.display = "none";
+    } else {
+      l3.style.display = "none";
+    }
+  } 
+  function l04() {
+    if (l4.style.display === "none") {
+        l1.style.display = "none";
+        l2.style.display = "none";
+        l3.style.display = "none";
+        l4.style.display = "block";
+        l5.style.display = "none";
+    } else {
+      l4.style.display = "none";
+    }
+  } 
+  function l05() {
+    if (l5.style.display === "none") {
+        l1.style.display = "none";
+        l2.style.display = "none";
+        l3.style.display = "none";
+        l4.style.display = "none";
+        l5.style.display = "block";
+    } else {
+      l5.style.display = "none";
+    }
+  } 
