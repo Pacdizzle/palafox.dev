@@ -12,3 +12,10 @@ lidarr.addEventListener("contextmenu", (e) => {e.preventDefault(window.open("htt
 
 const readarr = document.getElementById("readarr");
 readarr.addEventListener("contextmenu", (e) => {e.preventDefault(window.open("http://localhost:8787/","_self"))});
+
+var a = document.getElementById("5");
+
+
+function myFunction() {
+      a.style.display = "block";
+  }
