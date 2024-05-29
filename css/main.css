@@ -41,6 +41,13 @@ body {
   margin: 0;
   padding: 0;
 }
+h1, h2, a {
+  width: fit-content;
+  color: lime;
+}
+.navbar i:hover, .rss-feed-footer a:hover, .fmhy i:hover {
+  color: lime;
+}
 .wrapper {
   width: 90vw;
   height: 100vh;
@@ -56,10 +63,6 @@ header svg {
   fill: yellow;
   margin: 2em;
 }
-h1, h2, a {
-  width: fit-content;
-  color: lime;
-}
 .navbar {
   max-width: 1500px;
   height: auto;
@@ -70,18 +73,13 @@ h1, h2, a {
   margin: auto;
   padding: 2em;
 }
-.navbar svg {
-  width: 50px;
-  height: 50px;
-  fill: white; 
-  stroke: white;
-  stroke-width: 1;
-}
-.navbar svg:hover {
-  fill: lime;
-}
 .dropdown {
+  font-size: x-large;
   float: left;
+}
+.dropdown i {
+  color: white;
+  padding-bottom: .5em;
 }
 .dropdown-content {
   display: none;
@@ -89,6 +87,7 @@ h1, h2, a {
   max-height: 285px;
   overflow-y: scroll;
   overscroll-behavior: contain;
+  font-size: initial;
   color: white;
   background: black;
   border-style: ridge;
@@ -137,7 +136,7 @@ h1, h2, a {
   padding: .5em 1em;
   user-select: none;
 }
-.link-header a{
+.link-header a {
   text-align: left;
   padding: .5em 1em;
   text-decoration: underline;
@@ -200,8 +199,10 @@ hr {
   display:flex;
   justify-items:center;
 }
-.rss-feed-footer a:hover {
-  color: lime;
+.fmhy {
+  color: white;
+  font-size: x-large;
+  margin-top: 15vh;
 }
 .disclaimer {
   font-size: xx-small;
@@ -213,16 +214,21 @@ footer p {
   color: white;
   user-select: none;
 }
-footer span{
+footer span {
   color: gold;
   font-size: larger;
   transform: rotate(45deg);
   display: inline-block;
 }
 @media only screen and (max-width: 1000px) {
+  .dropdown {
+    font-size: large;
+  }
   .dropdown-content {
-    min-width: 99vw;
+    width: 85vw;
+    margin: auto;
     left: 0;
+    right: 0;
   }
 }
 @media only screen and (min-width: 1000px) {

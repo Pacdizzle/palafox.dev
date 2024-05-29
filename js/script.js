@@ -18,6 +18,7 @@ var l2 = document.getElementById("2");
 var l3 = document.getElementById("3");
 var l4 = document.getElementById("4");
 var l5 = document.getElementById("5");
+var l6 = document.getElementById("6");
 
 function l01() {
     if (l1.style.display === "none") {
@@ -26,6 +27,7 @@ function l01() {
       l3.style.display = "none";
       l4.style.display = "none";
       l5.style.display = "none";
+      l6.style.display = "none";
     } else {
       l1.style.display = "none";
     }
@@ -37,6 +39,7 @@ function l01() {
         l3.style.display = "none";
         l4.style.display = "none";
         l5.style.display = "none";
+        l6.style.display = "none";
     } else {
       l2.style.display = "none";
     }
@@ -48,6 +51,7 @@ function l01() {
         l3.style.display = "block";
         l4.style.display = "none";
         l5.style.display = "none";
+        l6.style.display = "none";
     } else {
       l3.style.display = "none";
     }
@@ -59,6 +63,7 @@ function l01() {
         l3.style.display = "none";
         l4.style.display = "block";
         l5.style.display = "none";
+        l6.style.display = "none";
     } else {
       l4.style.display = "none";
     }
@@ -70,7 +75,20 @@ function l01() {
         l3.style.display = "none";
         l4.style.display = "none";
         l5.style.display = "block";
+        l6.style.display = "none";
     } else {
       l5.style.display = "none";
     }
-  } 
+  }
+  function l06() {
+    if (l6.style.display === "none") {
+        l1.style.display = "none";
+        l2.style.display = "none";
+        l3.style.display = "none";
+        l4.style.display = "none";
+        l5.style.display = "none";
+        l6.style.display = "block";
+    } else {
+      l6.style.display = "none";
+    }
+  }
